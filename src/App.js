@@ -9,8 +9,8 @@ class App extends Component {
       <div className="App">
         <h1>Hello World</h1>
         <Switch>
-        	<Route path='/' component={ Home }/>
-        	<Route path='/' component={ TodosContainer }/>
+        	<Route exact path='/' component={ Home }/>
+        	<Route path='/todos' component={ TodosContainer }/>
         </Switch>
       </div>
     );
